@@ -32,6 +32,7 @@ public class CustomTcpServer {
         if (outputStream == null) return;
         outputStream.flush();
 
+        // поток ввода
         inputStream = StreamFactory.ExtractInputStreamFromSocket(clientSocket);
         if(inputStream == null) return;
 

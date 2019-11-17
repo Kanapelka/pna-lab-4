@@ -16,7 +16,7 @@ class CustomClient(socket: Socket) {
             print("Enter string: ");
             request = readLine().toString();
             outputStream.writeObject(request);
-            println(inputStream.readObject());
+            println(inputStream.readObject().toString());
         }
     }
 }
